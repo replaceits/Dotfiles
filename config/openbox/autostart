@@ -1,0 +1,4 @@
+( sleep 1s && nitrogen --restore ) &
+( sleep 1s && compton ) &
+( sleep 1s && xset -dpms s off ) &
+( sleep 1s && bash /usr/local/bin/lemonbar/lemonbar.sh | lemonbar -p -F#FFFFFFFF -B#FF222222 -f "DejaVu Sans Mono"-8 -f FontAwesome-8) &

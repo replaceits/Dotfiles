@@ -1,0 +1,199 @@
+<openbox_menu>
+	<menu id="root-menu" label="TITLE">
+		<menu id="internet-menu" label="Internet">
+			<item label="Firefox">
+				<action name="Execute">
+					<command>firefox</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="multimedia-menu" label="Multimedia">
+			<menu id="multimedia-art-menu" label="Art">
+				<item label="Gimp">
+					<action name="Execute">
+						<command>gimp</command>
+					</action>
+				</item>
+				<item label="Inkscape">
+					<action name="Execute">
+						<command>inkscape</command>
+					</action>
+				</item>
+				<item label="Blender">
+					<action name="Execute">
+						<command>Blender</command>
+					</action>
+				</item>
+				<item label="Audacity">
+					<action name="Execute">
+						<command>audacity</command>
+					</action>
+				</item>
+			</menu>
+			<menu id="multimedia-video-menu" label="Video">
+				<item label="VLC">
+					<action name="Execute">
+						<command>vlc</command>
+					</action>
+				</item>
+				<item label="Xine">
+					<action name="Execute">
+						<command>xine</command>
+					</action>
+				</item>
+			</menu>
+			<menu id="multimedia-music-menu" label="Music">
+				<item label="Ncmpcpp">
+					<action name="Execute">
+						<command>konsole -e ncmpcpp</command>
+					</action>
+				</item>
+				<menu id="multimedia-music-mpd" label="Mpd">
+					<item label="Start">
+						<action name="Execute">
+							<command>mpd</command>
+						</action>
+					</item>
+				</menu>
+			</menu>
+		</menu>
+		<menu id="development-menu" label="Development">
+			<item label="Eclipse">
+				<action name="Execute">
+					<command>eclipse</command>
+				</action>
+			</item>
+			<item label="Android">
+				<action name="Execute">
+					<command>android</command>
+				</action>
+			</item>
+			<item label="Tilem">
+				<action name="Execute">
+					<command>tilem2</command>
+				</action>
+			</item>
+			<item label="VmWare">
+				<action name="Execute">
+					<command>vmplayer</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="game-menu" label="Games">
+			<item label="Battlenet">
+				<action name="Execute">
+					<command>battlenet</command>
+				</action>
+			</item>
+			<item label="Steam">
+				<action name="Execute">
+					<command>steam</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="utils-menu" label="Utilities">
+			<item label="Konsole">
+				<action name="Execute">
+					<command>konsole</command>
+				</action>
+			</item>
+			<item label="ksnapshot">
+				<action name="Execute">
+					<command>ksnapshot</command>
+				</action>
+			</item>
+			<item label="Calculator">
+				<action name="Execute">
+					<command>kcalc</command>
+				</action>
+			</item>
+		</menu>
+		<menu id="sound-menu" label="Sound">
+			<item label="Play/Pause">
+				<action name="Execute">
+					<command>mpc toggle</command>
+				</action>
+			</item>
+			<item label="Stop">
+				<action name="Execute">
+					<command>mpc stop</command>
+				</action>
+			</item>
+			<item label="Next">
+				<action name="Execute">
+					<command>mpc next</command>
+				</action>
+			</item>
+			<item label="Prev">
+				<action name="Execute">
+					<command>mpc prev</command>
+				</action>
+			</item>
+			<menu id="sound-vol-menu" label="Volume">
+				<item label="-10%">
+					<action name="Execute">
+						<command>amixer set Master 10%- unmute</command>
+					</action>
+				</item>
+				<item label="+10%">
+					<action name="Execute">
+						<command>amixer set Master 10%+ unmute</command>
+					</action>
+				</item>
+				<item label="100%">
+					<action name="Execute">
+						<command>amixer set Master 100% unmute</command>
+					</action>
+				</item>
+				<item label="0%">
+					<action name="Execute">
+						<command>amixer set Master 0% unmute</command>
+					</action>
+				</item>
+				<item label="Mute/Unmute">
+					<action name="Execute">
+						<command>amixer set Master toggle</command>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<menu id="system-menu" label="System">
+			<menu id="system-appearance-menu" label="Appearance">
+				<menu id="system-appearance-openbox-menu" label="Openbox">
+					<item label="Reconfigure">
+						<action name="Execute">
+							<command>openbox --reconfigure</command>
+						</action>
+					</item>
+					<item label="Restart">
+						<action name="Execute">
+							<command>openbox --restart</command>
+						</action>
+					</item>
+				</menu>
+				<item label="Nitrogen">
+					<action name="Execute">
+						<command>nitrogen</command>
+					</action>
+				</item>
+			</menu>
+			<menu id="system-power-menu" label="Power">
+				<item label="Shutdown">
+					<action name="Execute">
+						<command>systemctl poweroff</command>
+					</action>
+				</item>
+				<item label="Restart">
+					<action name="Execute">
+						<command>systemctl reboot</command>
+					</action>
+				</item>
+				<item label="Halt">
+					<action name="Execute">
+						<command>systemctl halt</command>
+					</action>
+				</item>
+			</menu>
+		</menu>
+	</menu>
+</openbox_menu>
